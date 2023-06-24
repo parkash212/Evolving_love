@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-24T12:13:05 IST" name="Suite" finished-at="2023-06-24T12:13:30 IST" duration-ms="24996">
+    <groups>
+    </groups>
+    <test started-at="2023-06-24T12:13:05 IST" name="Chrome-Test" finished-at="2023-06-24T12:13:23 IST" duration-ms="17805">
+      <class name="Test_Cases.Test_Case001">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Test_Cases.Test_Case001@7eac9008]" started-at="2023-06-24T12:13:05 IST" name="setup" finished-at="2023-06-24T12:13:13 IST" duration-ms="7608" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testaccount()[pri:0, instance:Test_Cases.Test_Case001@7eac9008]" started-at="2023-06-24T12:13:13 IST" name="testaccount" finished-at="2023-06-24T12:13:23 IST" duration-ms="9776" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testaccount -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Cases.Test_Case001@7eac9008]" started-at="2023-06-24T12:13:23 IST" name="teardown" finished-at="2023-06-24T12:13:23 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Test_Cases.Test_Case001 -->
+    </test> <!-- Chrome-Test -->
+    <test started-at="2023-06-24T12:13:05 IST" name="Edge-Test" finished-at="2023-06-24T12:13:30 IST" duration-ms="24996">
+      <class name="Test_Cases.Test_Case001">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Test_Cases.Test_Case001@4afcd809]" started-at="2023-06-24T12:13:05 IST" name="setup" finished-at="2023-06-24T12:13:15 IST" duration-ms="9563" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testaccount()[pri:0, instance:Test_Cases.Test_Case001@4afcd809]" started-at="2023-06-24T12:13:15 IST" name="testaccount" finished-at="2023-06-24T12:13:30 IST" duration-ms="15239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testaccount -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Cases.Test_Case001@4afcd809]" started-at="2023-06-24T12:13:30 IST" name="teardown" finished-at="2023-06-24T12:13:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Test_Cases.Test_Case001 -->
+    </test> <!-- Edge-Test -->
+  </suite> <!-- Suite -->
+</testng-results>
