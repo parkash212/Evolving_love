@@ -15,6 +15,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 public class BaseClass {
@@ -23,9 +24,9 @@ public class BaseClass {
 	TakesScreenshot takesScreenshot  = (TakesScreenshot)driver;
 
 	
-	@BeforeClass
+	@BeforeClass(groups= {"sanity,regression"})
 	@Parameters("browser")
-	public void setup(String br) 
+	public void setup(@Optional("chrome") String br) 
 	{
 		
 		if(br.equalsIgnoreCase("edge")) {
@@ -39,11 +40,10 @@ public class BaseClass {
 		driver.get("http://evolvinglove.customerdevsites.com/");	
 		
 	}
-	@AfterClass
+	@AfterClass(groups= {"sanity,regression"})
 	public void teardown() throws IOException  {
 		//driver.quit();
 	}
-	
 	public String captureScreen(String tname) {
 		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		TakesScreenshot takesScreenshot  = (TakesScreenshot)driver;
@@ -52,6 +52,7 @@ public class BaseClass {
 	try {
 	 // File output = new File("C:\\Users\\iMark Admin\\Desktop\\Code editor\\seleniumproject\\Screenshot\\ex.png");
 	  FileUtils.copyFile(input,new File(destination));
+	  //FileUtils.copyFile(input,new File(destination));
 	} catch ( Exception e) {
 		e.getMessage();
 	} return destination;

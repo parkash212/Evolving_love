@@ -15,7 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class datadriven {
+public class Datadriven {
 	
 	WebDriver driver;
    // WebDriverWait wait;
@@ -42,7 +42,7 @@ public class datadriven {
  public void ReadData() throws IOException 
  {
      // Import excel sheet.
-     File src=new File("C:\\Users\\iMark Admin\\Desktop\\Code editor\\EvolvingLove\\target\\Updated RFQ-WL vs PL Breakdown.xlsx");
+     File src=new File("C:\\Users\\iMark Admin\\Desktop\\Code editor\\EvolvingLove\\test-data\\Opencart_LoginData.xlsx");
       
      // Load the file.
      FileInputStream finput = new FileInputStream(src);
