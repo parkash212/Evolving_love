@@ -88,6 +88,7 @@ public class Test_Case001 extends BaseClass {
 		hp.cvv();
 		hp.expiremonth();
 		hp.expireyear();
+		hp.purchase();
 	}
 
 }

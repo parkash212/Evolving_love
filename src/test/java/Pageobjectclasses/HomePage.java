@@ -464,6 +464,9 @@ WebElement txt_cvv;
  @FindBy(name="expiration-year")
   WebElement txt_expireyear;
  
+ @FindBy(xpath="//button[@id=\"purchase-btn\"]")
+ WebElement txt_purchase;
+ 
 
 
 public void freequiz() {
@@ -719,11 +722,11 @@ public void lastname(String p) {
 	
 	}
 public void emailing(String passel) {
-	js.executeScript("arguments[0].value='kingof';", txt_emailing);
+	js.executeScript("arguments[0].value='p@gmail.com';", txt_emailing);
 	
 	}
 public void numbering(String cal) {
-	js.executeScript("arguments[0].value='kingof';", txt_numbering);
+	js.executeScript("arguments[0].value='78787';", txt_numbering);
 	}
 public void checkboxing() {
 	js.executeScript("arguments[0].click();", txt_checkboxing);
@@ -755,12 +758,16 @@ js.executeScript("arguments[0].value='123';", txt_cvv);
 }
 public void expiremonth() {
 	Select selection = new Select(txt_expiremonth);
-	selection.selectByVisibleText("02");
+	selection.selectByVisibleText("02 - February");
 }
 public void expireyear() {
 Select selection = new Select(txt_expireyear);
 selection.selectByVisibleText("2024");
 }
+public void purchase() {
+	js.executeScript("arguments[0].click();",txt_purchase);
+}
+
 
 }
 

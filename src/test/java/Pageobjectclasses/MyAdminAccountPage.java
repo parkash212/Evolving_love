@@ -8,13 +8,11 @@ import org.openqa.selenium.support.FindBy;
 public class MyAdminAccountPage extends BasePage {
 	JavascriptExecutor js = (JavascriptExecutor)driver;
 	public MyAdminAccountPage(WebDriver driver) {
-		super(driver);
-		
+		super(driver);	
 }
 	//Evolving Love | Dashboard
-	// to find title of admin dashboard page 
-	@FindBy(xpath="//title[normalize-space()='Evolving Love | Dashboard']")
-	WebElement txt_msgHeading;
+	@FindBy(xpath="//h1[normalize-space()='Dashboard']") //h1[normalize-space()='Dashboard']
+	WebElement msgHeading;
 	
 	@FindBy(xpath="//button[@id='userDrop']")
 	WebElement txt_userdrop;
@@ -22,6 +20,7 @@ public class MyAdminAccountPage extends BasePage {
 	@FindBy(xpath="//a[normalize-space()='Log Out']")
 	WebElement txt_logout;
 	
+	// for dashboard 
 	public boolean isMyAdminAccountPageExists() {
 		try {
 			return (msgHeading.isDisplayed());
@@ -29,16 +28,10 @@ public class MyAdminAccountPage extends BasePage {
 			return (false);
 		}
 	}
-	
 	public void userdrop() {
-		js.executeScript("arrguments[0].click();",txt_logout);
-	}
-	
-	public void logout() {
 		js.executeScript("arrguments[0].click();",txt_userdrop);
 	}
-	
-	
-	
-	
+	public void logout() {
+		js.executeScript("arrguments[0].click();",txt_logout);
+	}
 }
