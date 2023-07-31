@@ -40,7 +40,6 @@ public class Excelutility {
 		fi.close();
 		return rowcount;		
 	}
-	
 	public int getCellCount(String sheetName,int rownum) throws IOException
 	{
 		fi=new FileInputStream(path);

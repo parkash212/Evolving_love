@@ -4,6 +4,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
 public class MyAdminAccountPage extends BasePage {
 	JavascriptExecutor js = (JavascriptExecutor)driver;
@@ -29,9 +30,13 @@ public class MyAdminAccountPage extends BasePage {
 		}
 	}
 	public void userdrop() {
-		js.executeScript("arrguments[0].click();",txt_userdrop);
+		Select ck = new Select(txt_userdrop);
+		ck.selectByVisibleText(null);
+		js.executeScript("arguments[0].click();",txt_userdrop);
 	}
 	public void logout() {
-		js.executeScript("arrguments[0].click();",txt_logout);
+		//Select ck = new Select(txt_logout);
+		//ck.selectByVisibleText("logout");
+		js.executeScript("arguments[0].click();",txt_logout);
 	}
 }

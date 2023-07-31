@@ -5,7 +5,7 @@
     <classes>
       <class name="Test_Cases.Tc_005_login_datadriven">
         <methods>
-          <include name="test_logindatadriven" invocation-numbers="1 2 3 4"/>
+          <include name="test_logindatadriven" invocation-numbers="0 1 2 3 4 5"/>
           <include name="setup"/>
           <include name="teardown"/>
         </methods>

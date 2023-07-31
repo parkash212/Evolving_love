@@ -7,12 +7,11 @@ import org.testng.annotations.DataProvider;
 //import org.testng.annotations.DataProvider;
 
 public class DataProviders {
-	
+
 	@DataProvider(name="LoginData")
 	public String [][] getData() throws IOException
 	{
 		String path=".\\test-data\\Opencart_LoginData.xlsx";//taking xl file from testData
-		///EvolvingLove/test-data/Opencart_LoginData.xlsx
 		// ./ represent current project directory
 		
 	Excelutility xlutil=new Excelutility(path);//creating an object for XLUtility
